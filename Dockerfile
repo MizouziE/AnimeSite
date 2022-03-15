@@ -104,7 +104,8 @@ VOLUME /home/${USERNAME}/.ssh
 
 WORKDIR /projects/workspace
 
-COPY src/* /projects/workspace/
+# COPY src/* /projects/workspace/
+# This one here above is the problem, need to figure out at what point and how evaxctly the write it
 
 HEALTHCHECK NONE
 
