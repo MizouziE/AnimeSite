@@ -104,7 +104,7 @@ VOLUME /home/${USERNAME}/.ssh
 
 WORKDIR /projects/workspace
 
-RUN cd ./projects/workspace | git clone https://github.com/DayMrz/AnimeSite.git
+COPY src/* /projects/workspace/
 
 HEALTHCHECK NONE
 
